@@ -6,12 +6,11 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.lublin.wsei.java.cwiczenia.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.lublin.wsei.java.cwiczenia.Controller">
    <children>
-      <Button layoutX="60.0" layoutY="36.0" mnemonicParsing="false" onAction="#btnOpenFileAction" text="Otwórz" />
-      <Label fx:id="lblFile" layoutX="155.0" layoutY="40.0" prefHeight="17.0" prefWidth="508.0" style="-fx-font-style: italic;" text="Prosze wczytać plik..." />
-      <ListView fx:id="lstNoblisci" layoutX="60.0" layoutY="83.0" prefHeight="409.0" prefWidth="372.0" />
+      <Button layoutX="25.0" layoutY="36.0" mnemonicParsing="false" onAction="#btnOpenFileAction" text="Otwórz" />
+      <Label fx:id="lblFile" layoutX="97.0" layoutY="40.0" prefHeight="17.0" prefWidth="508.0" style="-fx-font-style: italic;" text="Prosze wczytać plik..." />
+      <ListView fx:id="lstNoblisci" layoutX="25.0" layoutY="74.0" prefHeight="409.0" prefWidth="372.0" />
       <TextField fx:id="txtRok" editable="false" layoutX="486.0" layoutY="100.0" />
       <TextField fx:id="txtKategoria" editable="false" layoutX="486.0" layoutY="160.0" />
       <TextField fx:id="txtKraj" editable="false" layoutX="486.0" layoutY="213.0" />
@@ -20,6 +19,7 @@
       <Label layoutX="486.0" layoutY="143.0" text="Kategoria:" />
       <Label layoutX="486.0" layoutY="196.0" text="Kraj:" />
       <Label layoutX="486.0" layoutY="249.0" text="Uzasadnienie:" />
-      <Button layoutX="540.0" layoutY="323.0" mnemonicParsing="false" onAction="#btnExportOnAction" prefHeight="25.0" prefWidth="73.0" text="Export" />
+      <Button layoutX="486.0" layoutY="358.0" mnemonicParsing="false" onAction="#btnExportOnAction" prefHeight="25.0" prefWidth="73.0" text="Export" />
+      <Button layoutX="599.0" layoutY="358.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="73.0" text="Save" />
    </children>
 </AnchorPane>

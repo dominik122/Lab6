@@ -13,7 +13,7 @@ public class ExportWindow {
     public Label lblInfo;
 
     private ArrayList<Noblista> listaNoblistow;
-    public ArrayList<Noblista> filtrowaniNoblisci;
+    public ArrayList<Noblista> filtrowaniNoblisci = null;
 
     public void setListaNoblistow(ArrayList<Noblista> lst){
         listaNoblistow = lst;
