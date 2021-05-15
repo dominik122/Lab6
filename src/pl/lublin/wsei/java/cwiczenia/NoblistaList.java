@@ -11,7 +11,7 @@ public class NoblistaList {
         noblisci = new ArrayList<>();
 
         String line;
-        int nr = -1;
+        int nr = -1; // Ustawiamy zmienna sledzacanumer linii w celu pominiecia linii pierwszej zawierajacej opisy kolumn
         try {
             in = new BufferedReader(new FileReader(filepath));
             while ((line = in.readLine()) != null){

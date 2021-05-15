@@ -17,7 +17,6 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.io.*;
-import java.util.ArrayList;
 
 public class Controller {
 
@@ -35,9 +34,7 @@ public class Controller {
     public TextField txtKraj;
     public TextArea txtUzasadnienie;
 
-    ObservableList<String> pelneImiona = FXCollections.observableArrayList();
     NoblistaList noblisciList;
-    ArrayList<Noblista> filteredNoblisci;
     private Noblista selNoblista;
 
 
@@ -87,17 +84,12 @@ public class Controller {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("exportWindow.fxml"));
             Parent root = loader.load();
             ExportWindow export = loader.getController();
-            export.setListaNoblistow(noblisciList.noblisci);
+            export.setListaNoblistow(noblisciList.noblisci); // Przekazujemy wczytanaliste noblistow dodatkowemu okienku filtracji
 
             Stage stage = new Stage();
             stage.setTitle("Filtrowanie Noblistów");
             stage.setScene(new Scene(root, 338, 329));
             stage.show();
-
-            if(export.filtrowaniNoblisci != null){
-                filteredNoblisci = export.filtrowaniNoblisci;
-                System.out.println("Filtracja Udana");
-            }
         } catch(IOException e){
             e.printStackTrace();
         }

@@ -11,14 +11,14 @@ public class Noblista {
     public String dataRow;
 
     Noblista(String line){
-        String[] tokens = line.split(",(?=([^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)", -1);
+        String[] tokens = line.split(",(?=([^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)", -1); // rozdzielenie przy pomocy samego przecinka powoduje błędny podział na tokeny
 
         dataRow = line;
         imie = tokens[1];
         nazwisko = tokens[2];
         rok = tokens[12];
         kategoria = tokens[13];
-        uzasadnienie = tokens[16].replace("\"\"\"", "");
+        uzasadnienie = tokens[16].replace("\"\"\"", ""); // Pozbywamy sie cudzysłowów które znajduja sie przy uzasadnieniu
         kraj = tokens[19];
     }
 
