@@ -1,6 +1,5 @@
 package pl.lublin.wsei.java.cwiczenia;
 
-import java.util.ArrayList;
 
 public class Noblista {
     public String imie;
@@ -12,7 +11,6 @@ public class Noblista {
     public String dataRow;
 
     Noblista(String line){
-        //1,2,12,13,16,19
         String[] tokens = line.split(",(?=([^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)", -1);
 
         dataRow = line;
@@ -20,7 +18,7 @@ public class Noblista {
         nazwisko = tokens[2];
         rok = tokens[12];
         kategoria = tokens[13];
-        uzasadnienie = tokens[16];
+        uzasadnienie = tokens[16].replace("\"\"\"", "");
         kraj = tokens[19];
     }
 

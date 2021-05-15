@@ -10,10 +10,11 @@
       <TextField fx:id="txtRok" layoutX="95.0" layoutY="83.0" />
       <TextField fx:id="txtKraj" layoutX="95.0" layoutY="143.0" />
       <TextField fx:id="txtDziedzina" layoutX="95.0" layoutY="196.0" />
-      <Button layoutX="144.0" layoutY="266.0" mnemonicParsing="false" onAction="#btnFilterOnAction" text="Filter" />
+      <Button layoutX="103.0" layoutY="266.0" mnemonicParsing="false" onAction="#btnFilterOnAction" text="Filter" />
       <Label layoutX="91.0" layoutY="66.0" text="Rok:" />
       <Label layoutX="91.0" layoutY="126.0" text="Kraj:" />
       <Label layoutX="91.0" layoutY="179.0" text="Dziedzina:" />
-      <Label fx:id="lblInfo" layoutX="114.0" layoutY="236.0" prefHeight="17.0" prefWidth="107.0" style="-fx-font-style: italic;" text="Oczekiwanie..." />
+      <Label fx:id="lblInfo" alignment="CENTER" layoutX="13.0" layoutY="236.0" prefHeight="17.0" prefWidth="313.0" style="-fx-font-style: italic;" text="Oczekiwanie..." textAlignment="CENTER" />
+      <Button layoutX="184.0" layoutY="266.0" mnemonicParsing="false" onAction="#btnSaveOnAction" text="Save" />
    </children>
 </AnchorPane>
